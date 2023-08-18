@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineAccountingApp.Persist
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineAccountingApp.WebApi", "OnlineAccountingApp.WebApi\OnlineAccountingApp.WebApi.csproj", "{9CBB4027-44E1-4D2E-A6DF-1BEBEA068ACC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineAccountingApp.Presentation", "OnlineAccountingApp.Presentation\OnlineAccountingApp.Presentation.csproj", "{D73ED00B-B5B6-43E2-8117-4042E83CE1C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineAccountingApp.Presentation", "OnlineAccountingApp.Presentation\OnlineAccountingApp.Presentation.csproj", "{D73ED00B-B5B6-43E2-8117-4042E83CE1C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

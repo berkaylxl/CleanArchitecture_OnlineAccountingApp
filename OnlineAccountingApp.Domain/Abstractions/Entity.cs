@@ -5,7 +5,5 @@
         public string Id { get; set; }
         public DateTime Createdate { get; set; }
         public DateTime? UpdateDate { get; set; }
-
-        
     }
 }
