@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using OnlineAccountingApp.Application.Features.AppFeatures.CompanyFeatures.Commands.CreateCompany;
+using OnlineAccountingApp.Application.Features.AppFeatures.CompanyFeatures.Commands.MigrateCompanyDatabase;
 using OnlineAccountingApp.Presentation.Abstraction;
 
 namespace OnlineAccountingApp.Presentation.Controller
@@ -17,6 +18,14 @@ namespace OnlineAccountingApp.Presentation.Controller
         {
             CreateCompanyResponse response = await _mediator.Send(request);
             return Ok(response);
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> MigrateCompanyDatabases()
+        {
+            MigrateCompanyDatabasesRequest request = new();
+            MigrateCompanyDatabasesResponse response = await _mediator.Send(request);
+            return Ok(request);
         }
     }
 }

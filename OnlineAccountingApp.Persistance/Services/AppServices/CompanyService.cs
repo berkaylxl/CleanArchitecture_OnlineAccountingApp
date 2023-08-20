@@ -35,5 +35,15 @@ namespace OnlineAccountingApp.Persistance.Services.AppServices
         {
             return await GetCompanyByNameCompiled(_context, name);
         }
+
+        public async Task MigrateCompanyDatabases()
+        {
+            var companies = await _context.Set<Company>().ToListAsync();
+            foreach (var company in companies)
+            {
+                var db = new CompanyDbContext(company);
+                db.Database.Migrate();
+            }
+        }
     }
 }

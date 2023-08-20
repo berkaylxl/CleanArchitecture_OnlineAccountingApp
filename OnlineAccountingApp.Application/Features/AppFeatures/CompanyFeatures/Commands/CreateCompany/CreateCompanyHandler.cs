@@ -23,3 +23,4 @@ namespace OnlineAccountingApp.Application.Features.AppFeatures.CompanyFeatures.C
         }
     }
 }
+//Todo:44:54 Auto Migrate
